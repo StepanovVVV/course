@@ -1,0 +1,52 @@
+.btn
+    position: relative
+    display: inline-block
+    z-index: 1
+    &__box
+        display: inline-block
+        border-radius: 3.4rem
+        color: $color-white
+        text-align: center
+        font-size: $font-size-paragraph-1
+        font-style: normal
+        font-weight: 600
+        line-height: normal
+        letter-spacing: -0.14px
+        transition: all .3s ease 0s
+        padding: 1.9rem 2.8rem
+        @include respond(phone)
+            padding: 1.9rem 1.8rem
+        span
+            margin-left: 1.7rem
+    &__bg 
+        width: 105%
+        height: 120%
+        background-color: transparent
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        border-radius: 90px
+        z-index: -1
+        border: 3px solid $color-violet
+        box-shadow: 0 0 10px $color-violet
+        opacity: 0
+        transition: all .2s ease 0s
+    &__box:hover ~ .btn__bg
+        opacity: 1
+    &__box:active ~ .btn__bg
+        opacity: 0 
+.btn_1 
+    background-color: $color-violet
+.btn_2
+    background-color: $color-orange_2
+    padding: 1.9rem 3rem
+.btn__bg_2
+    border: 3px solid $color-orange_2
+    box-shadow: 0 0 10px $color-orange_2
+.btn_3
+    background-color: $color-orange
+    padding: 1.9rem 3rem
+.btn__bg_3
+    border: 3px solid $color-orange
+    box-shadow: 0 0 10px $color-orange

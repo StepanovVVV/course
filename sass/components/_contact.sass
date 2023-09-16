@@ -1,0 +1,49 @@
+.social
+    &__wrapper
+        @include style-flex
+        a
+            width: 3.2rem
+            height: 3.2rem
+            background-color: $color-white
+            @include style-flex
+            justify-content: center
+            border-radius: .4rem 
+            transition: all .3s ease 0s
+            &:hover
+                box-shadow: 0 0 10px $color-violet
+                transform: rotate(45deg)
+            &:active
+                box-shadow: 0 0 10px transparent
+            img
+                transition: all .3s ease 0s
+            &:hover img
+                transform: rotate(-45deg)
+    p
+        color: $color-light-gray
+        font-size: $font-size-paragraph-2
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        margin-top: 1.8rem
+
+.contact
+    @include respond(phone)
+        text-align: center
+    *:not(:last-child)
+        margin-bottom: .4rem
+    p, a
+        color: $color-light-gray
+        font-size:  $font-size-paragraph-2
+        font-style: normal
+        font-weight: 500
+        line-height: normal
+        letter-spacing: -0.16px
+    a
+        display: block
+        text-decoration: underline
+        transition: all .3s ease 0s
+        &:hover
+            color: $color-violet
+        &:active
+            color: $color-light-gray
+            transition: all .2s ease 0s

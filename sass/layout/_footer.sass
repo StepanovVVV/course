@@ -1,0 +1,8 @@
+.footer
+    background-color: $color-dark-gray
+    padding: 6.2rem 0
+    &__container
+        @include style-flex
+        @include respond(phone)
+            flex-direction: column-reverse
+            gap: 5rem

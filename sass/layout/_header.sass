@@ -1,0 +1,91 @@
+.header
+    &__container
+        padding-top: 4.9rem
+        @include style-flex
+        @include respond(tab-port)
+            padding-top: 2.2rem
+        @include respond(tablet)
+            padding-top: 1.5rem
+            position: relative
+    &__items
+        @include style-flex
+        @include respond(tablet)
+            flex-direction: column
+    &__item:not(:last-child)
+        margin-right: 6.2rem
+        @include respond(tablet)
+            margin-right: 0
+            margin-bottom: 4rem
+    &__item
+        position: relative
+        overflow: hidden
+        padding-bottom: .3rem
+    &__link
+        color: $color-gray
+        font-size: $font-size-paragraph-1
+        font-style: normal
+        font-weight: 500
+        transition: all .2s ease 0s
+        @include respond(tablet)
+            color: $color-white
+            font-size: 2.8rem
+    &__link:hover ~ .decor-line
+        left: 0
+        @include respond(tablet)
+            left: -100%
+    &__link:active
+        color: $color-violet
+    &__btn
+        width: 5rem
+        height: 4rem
+        cursor: pointer
+        position: relative
+        z-index: 1
+        display: none
+        @include respond(tablet)
+            display: inline-block
+        span, &::after, &::before
+            position: absolute
+            content: ""
+            display: inline-block
+            width: 100%
+            height: .5rem
+            background-color: $color-violet
+            transition: all .3s ease 0s
+        span
+            top: 50%
+            transform: translateY(-50%)
+        &::after
+            top: 0
+        &::before
+            top: auto
+            bottom: 0
+        @include respond(tablet)
+            &.active
+                span, &::after, &::before
+                    background-color: $color-white
+                span
+                    opacity: 0
+                &::after
+                    top: 17px
+                    transform: rotate(-45deg)
+                &::before
+                    bottom: 18px
+                    transform: rotate(45deg)
+    &__nav
+        @include respond(tablet)
+            position: absolute
+            right: -100%
+            background: $color-violet
+            background: linear-gradient(42deg, rgba(134,75,216,1) 0%, rgba(245,115,67,1) 100%)
+            height: 100vh
+            width: 100%
+            top: -1000%
+            transition: all .3s ease 0s
+            @include style-flex
+            justify-content: center
+            &.active
+                right: 0
+                top: 0
+
+

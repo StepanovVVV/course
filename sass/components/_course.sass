@@ -1,0 +1,34 @@
+.course
+    &__wrapper
+        grid-template-columns: repeat(4, minmax(160px, 263px))
+        gap: 3.2rem
+        margin-top: 3.9rem
+        @include respond(tablet)
+            grid-template-columns: repeat(2, minmax(160px, 263px))
+        @include respond(phone)
+            grid-template-columns: auto
+    &__item
+        flex-direction: column
+        border-radius: 1.1rem
+        background: $color-white
+        border: .1rem solid #F2F2F2
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1)
+        padding: 3.6rem 2.5rem 4.5rem
+    &__info
+        text-align: center
+        h3
+            padding-top: 2.4rem
+        p
+            padding-top: 1.3rem
+    &__box
+        width: 6.4rem
+        height: 6.4rem
+        border-radius: 50%
+    &__box_1
+        background-color: #EBDDFD 
+    &__box_2
+        background-color: #FFF0CD
+    &__box_3
+        background-color: #FFE8E0
+    &__box_4
+        background-color: #F3DDEA
