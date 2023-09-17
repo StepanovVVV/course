@@ -1,11 +1,15 @@
 .header
+    position: fixed
+    width: 100%
+    background-color: $color-white
+    z-index: 2
     &__container
-        padding-top: 4.9rem
+        padding: 3rem 1.5rem
         @include style-flex
         @include respond(tab-port)
-            padding-top: 2.2rem
+            padding: 2rem 1.5rem
         @include respond(tablet)
-            padding-top: 1.5rem
+            padding: 1rem 1.5rem
             position: relative
     &__items
         @include style-flex
