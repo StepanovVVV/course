@@ -1,5 +1,5 @@
 .reviews
-    padding: 4.4rem 0 6.2rem
+    padding: 4.4rem 0 3.2rem
     &__slider
         margin-top: 3.3rem
     &__wrapper
@@ -9,10 +9,53 @@
         filter: blur(.5rem)
         img
             border-radius: 2rem
+    &__next::after, &__prev::after
+        display: none
+    &__next, &__prev
+        position: relative
+        left: 50%
+        width: 6.1rem
+        height: 6.1rem
+        border-radius: 6.1rem
+        background-color: $color-white
+        box-shadow: 0px 25px 40px 0px rgba(59, 80, 90, 0.05)
+        border: .1rem solid rgba(59, 80, 90, 0.1)
+        transition: all .0s ease 0s
+    &__next
+        top: 5.3rem
+        transform: translateX(2rem) rotate(180deg)
+        background: url(../icons/arrow-1.svg) center/contain no-repeat
+        background-size: 2rem
+    &__prev
+        top: 1.4rem
+        transform: translateX(-7rem) rotate(360deg)
+        background: url(../icons/arrow-1.svg) center/contain no-repeat
+        background-size: 2rem
+        @include respond(big-screen)
+            top: .7rem
+    &__next:hover, &__prev:hover
+        border: .1rem solid $color-orange
+        background: url(../icons/arrow-2.svg) center/contain no-repeat $color-orange
+        background-size: 2rem
+    &__next:hover
+        transform: translateX(2rem) rotate(0deg)
+    &__prev:hover
+        transform: rotate(180deg) translateX(7rem)
+    &__next:active, &__prev:active
+        border: .1rem solid rgba(59, 80, 90, 0.1)
+        background: url(../icons/arrow-1.svg) center/contain no-repeat $color-white
+        background-size: 2rem
+    &__next:active
+        transform: translateX(2rem) rotate(180deg)
+    &__prev:active
+        transform: rotate(360deg) translateX(-7rem)
+        
+        
 
 .swiper
     width: 100%
     height: 100%
+    padding-bottom: 3rem
     &-slide
         text-align: center
         font-size: 18px
@@ -39,10 +82,8 @@
         img
             position: relative
             right: -15rem
-        
     &-slide-next
         transition: all .3s ease 0s !important
         img
             position: relative
             left: -15rem
-        

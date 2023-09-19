@@ -6,17 +6,13 @@ btnNav.addEventListener('click', function () {
 });
 
 let swiper = new Swiper(".reviews__slider", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 1,
     centeredSlides: true,
-    effect: "coverflow",
-    loop: true,
-    coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 0,
-        modifier: 1,
-        slideShadows: true,
+    effect: "cards",
+    breakpoints: {
+        1024: {
+            slidesPerView: 2,
+        },
     },
     navigation: {
         nextEl: ".swiper-button-next",
