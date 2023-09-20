@@ -27,6 +27,8 @@
             letter-spacing: -2px
             @include respond(phone)
                 font-size: 4rem
+            @include respond(phone-small)
+                font-size: 3rem
             span
                 display: inline-block
                 span
@@ -37,6 +39,9 @@
                     img
                         width: 3.6rem
                         height: 4.1rem
+                        @include respond(phone-small)
+                            width: 2.6rem
+                            height: 3.1rem
         p
             color: $color-light-gray
             text-align: center
@@ -45,6 +50,8 @@
             font-weight: 400
             line-height: 1.41
             margin-top: 2.5rem
+            @include respond(phone-small)
+                font-size: $font-size-paragraph-1
             span
                 display: block
             span:last-child

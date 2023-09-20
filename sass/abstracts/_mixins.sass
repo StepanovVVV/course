@@ -10,6 +10,10 @@
     align-items: center
 
 @mixin respond($breakpoint)
+    @if $breakpoint == phone-small
+        @media only screen and (max-width: 320px)
+            @content
+
     @if $breakpoint == phone
         @media only screen and (max-width: 479.98px)
             @content

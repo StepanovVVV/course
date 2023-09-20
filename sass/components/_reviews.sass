@@ -1,5 +1,7 @@
 .reviews
     padding: 4.4rem 0 3.2rem
+    @include respond(tablet)
+        padding: 4.4rem 0 .2rem
     &__slider
         margin-top: 3.3rem
     &__wrapper
@@ -26,6 +28,8 @@
         transform: translateX(2rem) rotate(180deg)
         background: url(../icons/arrow-1.svg) center/contain no-repeat
         background-size: 2rem
+        @include respond(tablet)
+            top: 3.3rem
     &__prev
         top: 1.4rem
         transform: translateX(-7rem) rotate(360deg)
@@ -33,6 +37,8 @@
         background-size: 2rem
         @include respond(big-screen)
             top: .7rem
+        @include respond(tablet)
+            top: -.6rem
     &__next:hover, &__prev:hover
         border: .1rem solid $color-orange
         background: url(../icons/arrow-2.svg) center/contain no-repeat $color-orange

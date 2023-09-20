@@ -11,11 +11,15 @@ let swiper = new Swiper(".reviews__slider", {
     effect: "cards",
     breakpoints: {
         1024: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         },
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+});
+
+new ItcAccordion(document.querySelector('.accordion'), {
+    alwaysOpen: false
 });

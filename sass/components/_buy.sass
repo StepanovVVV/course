@@ -1,5 +1,7 @@
 .buy
     padding: 0 0.7rem 6.5rem
+    @include respond(tablet)
+        padding: 0 0.7rem 2.5rem
     &__container
         background: $color-violet
         background: url(../img/img-big/bg-violet.jpg) center/cover no-repeat
@@ -8,6 +10,7 @@
         @include respond(phone)
             padding: 7rem 1rem 7rem
     &__wrapper
+        position: relative
         h2
             color: $color-white
             font-family: "Montserrat"
@@ -26,6 +29,8 @@
             line-height: normal
             letter-spacing: 3.2px
             margin-top: .6rem
+            position: relative
+            z-index: 1
     &__btn
         margin-top: 5rem
         @include respond(phone)
@@ -34,3 +39,16 @@
             img
                 width: 1.6rem
                 height: 1.6rem
+    &__decor
+        position: absolute
+        transform: translate(-50%, -50%)
+    &__decor_1
+        width: 5.6rem
+        height: 5.6rem
+        top: 65%
+        left: 12%
+    &__decor_2
+        width: 5rem
+        height: 5rem
+        top: 55%
+        right: 6%
