@@ -35,10 +35,6 @@
     transform: rotate(-180deg);
 }
 
-.accordion__header:hover {
-    background-color: #0b5ed7;
-}
-
 .accordion__item:not(.accordion__item_show) .accordion__header {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
