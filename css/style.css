@@ -635,6 +635,7 @@ body {
 }
 .who__decor {
   position: absolute;
+  z-index: 1;
 }
 .who__decor_1 {
   left: -5rem;
@@ -644,7 +645,12 @@ body {
   .who__decor_1 {
     top: auto;
     bottom: 0;
-    left: -6rem;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .who__decor_1 {
+    left: -5rem;
   }
 }
 .who__decor_2 {

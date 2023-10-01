@@ -1,3 +1,4 @@
+// Menu-burger
 let btnNav = document.querySelector('.header__btn');
 let windowNav = document.querySelector('.header__nav');
 btnNav.addEventListener('click', function () {
@@ -5,6 +6,7 @@ btnNav.addEventListener('click', function () {
     windowNav.classList.toggle('active');
 });
 
+// Slider
 let swiper = new Swiper(".reviews__slider", {
     slidesPerView: 1,
     centeredSlides: true,
@@ -20,6 +22,13 @@ let swiper = new Swiper(".reviews__slider", {
     },
 });
 
+// Accordion
 new ItcAccordion(document.querySelector('.accordion'), {
     alwaysOpen: false
+});
+
+// Animation
+AOS.init({
+    duration: 800,
+    once: false,
 });

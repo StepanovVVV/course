@@ -12,13 +12,16 @@
             overflow: hidden
     &__decor
         position: absolute
+        z-index: 1
     &__decor_1
         left: -5rem
         top: -3rem
         @include respond(tablet)
             top: auto
             bottom: 0
-            left: -6rem
+            left: 0
+        @include respond(big-phone)
+            left: -5rem
     &__decor_2
         right: -2.4rem
         top: -2rem
