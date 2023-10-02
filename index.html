@@ -367,7 +367,7 @@
                         <h2>Придбати курс всього за 350 грн</h2>
                         <p>і почати навчання вже сьогодні</p>
                         <div class="btn buy__btn">
-                            <a href="#!" class="btn__box btn_2">Перейти до оплати<span><img src="icons/right-arrow.svg"
+                            <a href="#popup" class="btn__box btn_2">Перейти до оплати<span><img src="icons/right-arrow.svg"
                                         alt="right-arrow"></span></a>
                             <div class="btn__bg btn__bg_2"></div>
                         </div>
@@ -384,7 +384,7 @@
                             <h2 class="title">Часті питання</h2>
                         </div>
                         <div id="accordion" class="accordion questions__accordion">
-                            <div class="accordion__item questions__item" data-aos="zoom-in-down">
+                            <div class="accordion__item questions__item" data-aos="zoom-in-right">
                                 <div class="accordion__header questions__header">
                                     Які ресурси треба мати, щоб впровадити інструменти курсу?
                                 </div>
@@ -396,7 +396,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion__item questions__item" data-aos="zoom-in-down">
+                            <div class="accordion__item questions__item" data-aos="zoom-in-right">
                                 <div class="accordion__header questions__header">
                                     Це точно допоможе?
                                 </div>
@@ -408,7 +408,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion__item questions__item" data-aos="zoom-in-down">
+                            <div class="accordion__item questions__item" data-aos="zoom-in-right">
                                 <div class="accordion__header questions__header">
                                     Чому така низька вартість?
                                 </div>
@@ -420,7 +420,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion__item questions__item" data-aos="zoom-in-down">
+                            <div class="accordion__item questions__item" data-aos="zoom-in-right">
                                 <div class="accordion__header questions__header">
                                     Чи підійде мені курс, якщо я не маю досвіду в репетиторстві?
                                 </div>
@@ -432,7 +432,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion__item questions__item" data-aos="zoom-in-down">
+                            <div class="accordion__item questions__item" data-aos="zoom-in-right">
                                 <div class="accordion__header questions__header">
                                     А якщо курс мені не сподобається?
                                 </div>
@@ -444,7 +444,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="accordion__item questions__item" data-aos="zoom-in-down">
+                            <div class="accordion__item questions__item" data-aos="zoom-in-right">
                                 <div class="accordion__header questions__header">
                                     Як проходить курс?
                                 </div>
@@ -514,6 +514,23 @@
                 </div>
             </div>
         </footer>
+
+        <div id="popup" class="popup">
+            <a href="#!" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#close__popup" class="popup__close">&#10006;</a>
+                    <div class="popup__title popup__title-email"></div>
+                    <div class="popup__text">
+                        <form action="">
+                            <input type="text" required placeholder="Иван Иванович И.">
+                            <input type="number" required placeholder="Номер телефона">
+                            <button type="submit" class="button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/accordion.js"></script>
