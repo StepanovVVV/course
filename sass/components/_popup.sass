@@ -31,8 +31,7 @@
         padding: 3rem 1rem
         transition: all .8s ease 0s
     &__content 
-        background-color: #fff
-        color: #000
+        background-color: $color-white
         max-width: 48rem
         padding: 3rem
         position: relative
@@ -44,10 +43,42 @@
     &__close
         position: absolute
         right: 1.5rem
-        top: 1.5rm
+        top: 1.5rem
         font-size: 2rem
-        color: #000
+        color: $color-orange_2
         text-decoration: none
+        transition: all .3s ease 0s
+    &__close:hover
+        color: $color-violet
+    &__close:active
+        color: $color-orange_2
     &__title
-        font-size: 4rem
+        font-size: $font-size-paragraph-3
         margin: 0 auto 2rem
+        color: $color-orange_2
+        text-align: center
+    &__text
+        form
+            @include style-flex
+            flex-direction: column
+            input
+                border: .2rem solid $color-orange_2
+                padding: 1rem
+                border-radius: 2rem 
+                width: 100%
+                color: $color-orange_2
+                transition: all .3s ease 0s
+            input:focus
+                border: .2rem solid $color-orange
+            input + input
+                margin-top: 2rem
+            input::placeholder
+                color: $color-orange_2
+    &__btn
+        width: 100%
+        margin-top: 3rem
+    &__btn .btn__box
+        width: 100%
+    &__btn .btn__bg
+        width: 102%
+        height: 115%

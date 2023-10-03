@@ -58,3 +58,10 @@ btnLink5.addEventListener('click', function () {
     btnNav.classList.toggle('active');
     windowNavclassList.toggle('active');
 });
+
+// phone-mask
+$(document).ready(function () {
+    $("#phone").inputmask({
+        "mask": "+38(099) 999-99-99"
+    });
+});
